@@ -24,8 +24,8 @@
                             <td><?= $sobre->id ?></td>
                             <td><?= $sobre->titulo ?></td>
                             <td class="text-center">
-                                <?= anchor('home/editarconteudo/' . $sobre->id, '<i class="fas fa-pencil-alt"></i>', array('title' => 'Editar')) ?>
-                                <?= anchor('home/deletarconteudo/' . $sobre->id, '<i class="fas fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
+                                <?= anchor('sobre/editarsobre/' . $sobre->id, '<i class="fas fa-pencil-alt"></i>', array('title' => 'Editar')) ?>
+                                <?= anchor('sobre/deletarsobre/' . $sobre->id, '<i class="fas fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
                             </td>
                         </tr>
                     <?php } ?>

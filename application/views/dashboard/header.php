@@ -64,7 +64,10 @@
                             <?php echo anchor('sobre', '<span><i class="fas fa-laptop-code"></i> Sobre</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
-                            <?php echo anchor('relatorioanual', '<span><i class="fas fa-laptop-code"></i> Relatório</span>', array('class' => 'nav-link')) ?>
+                            <?php echo anchor('projetos', '<span><i class="fas fa-laptop-code"></i> Projetos</span>', array('class' => 'nav-link')) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?php echo anchor('relatorio', '<span><i class="fas fa-laptop-code"></i> Relatório</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
                             <?php echo anchor('knowhowconteudo', '<span><i class="fas fa-laptop-code"></i> Know-How</span>', array('class' => 'nav-link')) ?>

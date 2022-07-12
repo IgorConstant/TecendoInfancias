@@ -27,7 +27,7 @@ class Banners extends CI_Controller
         //Titulo
         $data['titulo_site'] = 'Gerenciador';
         $data['titulo_pagina'] = 'Banners Home';
-        $data['app_home'] = $this->banners_model->listarBanners();
+        $data['app_banners'] = $this->banners_model->listarBanners();
 
 
         //Load dos arquivos de layout

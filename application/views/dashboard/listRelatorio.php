@@ -3,7 +3,7 @@
         <h1 class="h2"><i class="fas fa-laptop-code"></i> <?php echo $titulo_pagina ?></h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
-                <?php echo anchor('banners/adicionarbanner', '<i class="fas fa-plus-circle"></i> <span>Adicionar Novo Banner</span>', array('class' => 'btn btn-outline-success')) ?>
+                <?php echo anchor('relatorio/adicionarelatorio', '<i class="fas fa-plus-circle"></i> <span>Adicionar Relatório</span>', array('class' => 'btn btn-outline-success')) ?>
             </div>
         </div>
     </div>
@@ -20,13 +20,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($app_banners as $banners) { ?>
+                    <?php foreach ($app_relatorios as $relatorios) { ?>
                         <tr>
-                            <td><?= $banners->id ?></td>
-                            <td><?= $banners->nome_banner ?></td>
-                            <td><?= $banners->legenda ?></td>
+                            <td><?= $relatorios->id ?></td>
+                            <td><?= $relatorios->titulo ?></td>
+                            <td><?= $relatorios->legenda ?></td>
                             <td class="text-center">
-                                <?= anchor('banners/apagarbanners/' . $banners->id, '<i class="fas fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
+                                <?= anchor('relatorio/apagarelatorio/' . $relatorios->id, '<i class="fas fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
                             </td>
                         </tr>
                     <?php } ?>

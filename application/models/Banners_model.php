@@ -3,14 +3,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Banners_model extends CI_Model
 {
-    //Listar os Logos Cadastrados
+
     public function listarBanners()
     {
         return $this->db->get('app_banners')->result();
     }
 
 
-    //Adicionar novo Logo
+
     public function criarBanner($dados = NULL)
     {
         if (is_array($dados)) {
@@ -18,7 +18,7 @@ class Banners_model extends CI_Model
         }
     }
 
-    //Utilizar a ID do Logo para Buscar
+
     public function getBannerID($id = NULL)
     {
         if ($id) {
@@ -28,7 +28,7 @@ class Banners_model extends CI_Model
         }
     }
 
-    //Apagar Logo
+
     public function apagarBanner($id = NULL)
     {
         if ($id) {

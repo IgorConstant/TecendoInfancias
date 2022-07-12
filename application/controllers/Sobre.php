@@ -63,7 +63,7 @@ class Sobre extends CI_Controller
             redirect('sobre', 'refresh');
         }
 
-        $query = $this->sobre_model->getConteudoHome($id);
+        $query = $this->sobre_model->getConteudoSobre($id);
 
         $this->form_validation->set_rules('tituloSobre', 'Titulo Conteúdo', 'required', array('required' => 'O Campo título é obrigatório'));
         $this->form_validation->set_rules('textoSobre', 'Conteúdo', 'required', array('required' => 'O Campo texto é obrigatório'));
